@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbnqn3anep0u6"]
+
+[ext_resource type="Texture2D" uid="uid://dkvfv4sc8tvlq" path="res://background/groundremove.png" id="1_dfy80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tycio"]
+size = Vector2(3521, 118)
+
+[node name="ground" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-29.999998, 364)
+scale = Vector2(5.7598033, 1)
+texture = ExtResource("1_dfy80")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1733, 615)
+shape = SubResource("RectangleShape2D_tycio")

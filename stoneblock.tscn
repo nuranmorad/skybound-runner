@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://caiqq61ksgw3p"]
+
+[ext_resource type="Texture2D" uid="uid://dpjdkmi3c7s3u" path="res://obstacles/StoneBlock.png" id="1_6rhih"]
+
+[node name="stoneblock" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_6rhih")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1.5, 1.5)
+polygon = PackedVector2Array(47.5, -49.5, -46.5, -49.5, -50.3, -45.5, -50.5, 46.300003, -48.5, 48.300003, -48.5, 49.5, 46.9, 49.5, 50.5, 44.5, 50.5, -45.3, 47.5, -48.3)

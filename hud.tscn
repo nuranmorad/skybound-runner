@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://54w642gb56if"]
+
+[ext_resource type="FontFile" uid="uid://1arla8y8jrg4" path="res://Pixel Game.otf" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="scoreLabel" type="Label" parent="."]
+offset_right = 138.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 40
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="highscorelabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -221.0
+offset_bottom = 55.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.9942309, 0.9972437, 0.9875961, 1)
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 40
+text = "Highscore:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="startLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -11.5
+offset_right = 69.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.07058824, 0.21176471, 1, 1)
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 64
+text = "Press start to play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="coinlabel" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_37p78")
+theme_override_font_sizes/font_size = 38
+text = "coins:"
+horizontal_alignment = 1
+vertical_alignment = 1
